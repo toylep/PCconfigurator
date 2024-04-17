@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Gigabyte RTX 4060 eagle oc",
+        "frequency": 1830,
+        "memory": 8,
+        "bar": 128,
+        "tdp": 115,
+        "cost": 37799
+    },
+    {
+        "name": "asus RTX 4060 proart oc",
+        "frequency": 1830,
+        "memory": 8,
+        "bar": 128,
+        "tdp": 115,
+        "cost": 42499
+    },
+    {
+        "name": "Gigabyte RTX 4060ti eagle",
+        "frequency": 2310,
+        "memory": 8,
+        "bar": 128,
+        "tdp": 160,
+        "cost": 48499
+    },
+    {
+        "name": "Gigabyte RTX 4060ti aorus elite",
+        "frequency": 2310,
+        "memory": 8,
+        "bar": 128,
+        "tdp": 160,
+        "cost": 62799
+    },
+    {
+        "name": "msi RTX 4070 ventus 3x",
+        "frequency": 1920,
+        "memory": 12,
+        "bar": 192,
+        "tdp": 200,
+        "cost": 68999
+    },
+    {
+        "name": "Gigabyte RTX 4070 gaming oc",
+        "frequency": 1920,
+        "memory": 12,
+        "bar": 192,
+        "tdp": 200,
+        "cost": 77499
+    },
+    {
+        "name": "Gigabyte RTX 4070Super aorus master",
+        "frequency": 1920,
+        "memory": 12,
+        "bar": 192,
+        "tdp": 285,
+        "cost": 80299
+    },
+    {
+        "name": "msi RTX 4070super ventus 3x oc",
+        "frequency": 1920,
+        "memory": 12,
+        "bar": 192,
+        "tdp": 285,
+        "cost": 83999
+    },
+    {
+        "name": "Gigabyte RTX 4070ti windforce oc",
+        "frequency": 2310,
+        "memory": 12,
+        "bar": 192,
+        "tdp": 285,
+        "cost": 85999
+    },
+    {
+        "name": "asus RTX 4070ti TUF gaming oc",
+        "frequency": 2310,
+        "memory": 12,
+        "bar": 192,
+        "tdp": 285,
+        "cost": 103499
+    },
+    {
+        "name": "msi RTX 4070ti super gaming x",
+        "frequency": 2340,
+        "memory": 16,
+        "bar": 256,
+        "tdp": 300,
+        "cost": 119999
+    },
+    {
+        "name": "Gigabyte RTX 4080 gaming oc",
+        "frequency": 2210,
+        "memory": 16,
+        "bar": 256,
+        "tdp": 320,
+        "cost": 128999
+    },
+    {
+        "name": "Gigabyte RTX 4080 eagle oc",
+        "frequency": 2210,
+        "memory": 16,
+        "bar": 256,
+        "tdp": 320,
+        "cost": 137499
+    },
+    {
+        "name": "msi RTX 4080super gaming x",
+        "frequency": 2295,
+        "memory": 16,
+        "bar": 256,
+        "tdp": 320,
+        "cost": 142999
+    },
+    {
+        "name": "msi RTX 4080super suprim x",
+        "frequency": 2295,
+        "memory": 16,
+        "bar": 256,
+        "tdp": 320,
+        "cost": 149999
+    },
+    {
+        "name": "Gigabyte RTX 4090 gaming oc",
+        "frequency": 2235,
+        "memory": 24,
+        "bar": 384,
+        "tdp": 450,
+        "cost": 232999
+    },
+    {
+        "name": "asus RTX 4090 TUF gaming oc",
+        "frequency": 2235,
+        "memory": 24,
+        "bar": 384,
+        "tdp": 450,
+        "cost": 274999
+    }
+]

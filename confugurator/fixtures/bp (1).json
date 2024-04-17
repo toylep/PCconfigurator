@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Cougar xtc500",
+        "power": 500,
+        "cost": 4099
+    },
+    {
+        "name": "Cougar stx450",
+        "power": 450,
+        "cost": 4199
+    },
+    {
+        "name": "Cougar xtc600",
+        "power": 600,
+        "cost": 4299
+    },
+    {
+        "name": "chieftec volta vps-600s",
+        "power": 600,
+        "cost": 5100
+    },
+    {
+        "name": "chieftec volta vps-700s",
+        "power": 700,
+        "cost": 5399
+    },
+    {
+        "name": "Gigabyte p650b",
+        "power": 650,
+        "cost": 6499
+    },
+    {
+        "name": "Cougar BXM 1000",
+        "power": 1000,
+        "cost": 9999
+    },
+    {
+        "name": "Cougar gx 800w",
+        "power": 800,
+        "cost": 9999
+    },
+    {
+        "name": "be quiet! SYSTEM POWER 10",
+        "power": 750,
+        "cost": 10299
+    },
+    {
+        "name": "be quiet! SYSTEM POWER 10",
+        "power": 850,
+        "cost": 16999
+    },
+    {
+        "name": "be quiet! PURE POWER 12M",
+        "power": 650,
+        "cost": 14799
+    },
+    {
+        "name": "be quiet! Dark POWER pro 12",
+        "power": 1500,
+        "cost": 47299
+    }
+]

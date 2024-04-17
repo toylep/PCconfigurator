@@ -1,0 +1,81 @@
+[{
+    "name": "msi pro b760m-e",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "B760",
+    "power_phases": 8,
+    "cost": 12199
+    },
+    {
+    "name": "GIGABYTE B760 DS3H",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "B760",
+    "power_phases": 11,
+    "cost": 15999
+    },
+    {
+    "name": "MSI B760M GAMING PLUS WIFI",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "B760",
+    "power_phases": 14,
+    "cost": 16999
+    },
+    {
+    "name": "GIGABYTE B760 GAMING X AX",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "B760",
+    "power_phases": 10,
+    "cost": 18499
+    },
+    {
+    "name": "MSI MPG B760I EDGE WIFI",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "B760",
+    "power_phases": 10,
+    "cost": 20499
+    },
+    {
+    "name": "GIGABYTE Z790 UD AX",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "Z790",
+    "power_phases": 17,
+    "cost": 20599
+    },
+    {
+    "name": "MSI MAG B760 TOMAHAWK WIFI",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "Z790",
+    "power_phases": 14,
+    "cost": 20799
+    },
+    {
+    "name": "ASUS TUF GAMING B760M-PLUS WIFI",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "B760",
+    "power_phases": 13,
+    "cost": 21299
+    },
+    {
+    "name": "MSI MAG Z690 TOMAHAWK WIFI",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "Z690",
+    "power_phases": 18,
+    "cost": 25899
+    },
+    {
+    "name": "MSI Z790 GAMING PRO WIFI",
+    "socket": 1700,
+    "type_of_memory": "DDR5",
+    "chipset": "Z790",
+    "power_phases": 16,
+    "cost": 33499
+    }
+]    

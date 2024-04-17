@@ -1,0 +1,108 @@
+[{
+    "name": "intel celeron g6900",
+    "socket": 1700,
+    "tdp": 46,
+    "is_graphics": true,
+    "frequency": "2*3.4",
+    "frequency_of_memory":4800,
+    "cost": 6399
+    },
+    {
+    "name": "intel core i3 12100f",
+    "socket": 1700,
+    "tdp": 89,
+    "is_graphics": false,
+    "frequency": "4*3.3",
+    "frequency_of_memory":4800,
+    "cost":8599
+    },
+    {
+    "name": "intel core i3 13100f",
+    "socket": 1700,
+    "tdp": 89,
+    "is_graphics": false,
+    "frequency": "4*3.4",
+    "frequency_of_memory":4800,
+    "cost": 10399
+    },
+    {
+    "name": "intel core i3 12100",
+    "socket": 1700,
+    "tdp": 46,
+    "is_graphics": true,
+    "frequency": "4*3.3",
+    "frequency_of_memory":4800,
+    "cost": 11799
+    },
+    {
+    "name": "intel core i5 12400f",
+    "socket": 1700,
+    "tdp": 117,
+    "is_graphics": false,
+    "frequency": "6*2.5",
+    "frequency_of_memory":4800,
+    "cost": 13499
+    },
+    {
+    "name": "intel core i5 12490f",
+    "socket": 1700,
+    "tdp": 117,
+    "is_graphics": false,
+    "frequency": "6*3",
+    "frequency_of_memory":4800,
+    "cost":16299
+    },
+    {
+    "name": "intel core i5 13400",
+    "socket": 1700,
+    "tdp": 148,
+    "is_graphics": true,
+    "frequency": null,
+    "frequency_of_memory":4800,
+    "cost": 21499
+    },
+    {
+    "name": "intel core i5 12600k",
+    "socket": 1700,
+    "tdp": 150,
+    "is_graphics": true,
+    "frequency": null,
+    "frequency_of_memory":4800,
+    "cost": 23999
+    },
+    {
+    "name": "intel core i7 12700f",
+    "socket": 1700,
+    "tdp": 180,
+    "is_graphics": false,
+    "frequency": null,
+    "frequency_of_memory":4800,
+    "cost": 30999
+    },
+    {
+    "name": "intel core i7 12700k",
+    "socket": 1700,
+    "tdp": 190,
+    "is_graphics": true,
+    "frequency": null,
+    "frequency_of_memory":4800,
+    "cost":32499
+    },
+    {
+    "name": "intel core i9 12900f",
+    "socket": 1700,
+    "tdp": 202,
+    "is_graphics": false,
+    "frequency": null,
+    "frequency_of_memory":4800,
+    "cost": 36999
+    },
+    {
+    "name": "intel core i9 13900 ks",
+    "socket": 1700,
+    "tdp": 253,
+    "is_graphics": true,
+    "frequency": null,
+    "frequency_of_memory":5600,
+    "cost": 82499
+    }]

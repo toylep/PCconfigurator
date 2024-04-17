@@ -1,0 +1,181 @@
+[{
+    "name": "Adata XPG Lancer white",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 1,
+    "cost": 3199,
+    "is_game": true
+    },
+    {
+    "name": "Adata XPG Lancer black",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 1,
+    "cost": 3499,
+    "is_game": true
+    },
+    {
+    "name": "Adata",
+    "frequency": 5600,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 1,
+    "cost": 3599,
+    "is_game": false
+    },
+    {
+    "name": "Samsung",
+    "frequency": 4800,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 1,
+    "cost": 3699,
+    "is_game": false
+    },
+    {
+    "name": "Adata XPG hunter",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 1,
+    "cost": 3799,
+    "is_game": true
+    },
+    {
+    "name": "kingston fury beast black AMD",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 1,
+    "cost": 4399,
+    "is_game": true
+    },
+    {
+    "name": "kingston fury beast black",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 1,
+    "cost": 4999,
+    "is_game": true
+    },
+    {
+    "name": "kingston fury beast black",
+    "frequency": 6000,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 1,
+    "cost": 5399,
+    "is_game": true
+    },
+    {
+    "name": "Adata gold",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 5999,
+    "is_game": false
+    },
+    {
+    "name": "Adata XPG Lancer blade white",
+    "frequency": 5600,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 6099,
+    "is_game": true
+    },
+    {
+    "name": "Adata XPG Lancer black",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 6599,
+    "is_game": true
+    },
+    {
+    "name": "Adata XPG Lancer blade black",
+    "frequency": 6000,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 6599,
+    "is_game": true
+    },
+    {
+    "name": "Adata XPG Lancer white",
+    "frequency": 6000,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 6599,
+    "is_game": true
+    },
+    {
+    "name": "Adata XPG caster",
+    "frequency": 6000,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 6799,
+    "is_game": true
+    },
+    {
+    "name": "Samsung",
+    "frequency": 4800,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 6799,
+    "is_game": false
+    },
+    {
+    "name": "Samsung",
+    "frequency": 5600,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 6799,
+    "is_game": false
+    },
+    {
+    "name": "Adata XPG Lancer white",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 2,
+    "cost": 6899,
+    "is_game": true
+    },
+    {
+    "name": "Adata XPG Lancer black",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 8,
+    "count": 2,
+    "cost": 6899,
+    "is_game": true
+    },
+    {
+    "name": "Adata XPG Lancer RGB",
+    "frequency": 5200,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 7199,
+    "is_game": true
+    },
+    {
+    "name": "crutial",
+    "frequency": 4800,
+    "type": "DDR5",
+    "value_gb": 16,
+    "count": 1,
+    "cost": 7499,
+    "is_game": false
+    }
+]
