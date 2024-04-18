@@ -34,14 +34,13 @@ class ConfigurationCreator:
 
     def create_configuration(self, price_dict: dict[str, float]) -> Configuration:
         # Получаем комплектующие в нужном порядке для совместимости
-        print(price_dict)
-        cpu = self.get_powerfull_cpu(price_dict["cpu"])
-        print("cpu",cpu)
-        # Если нужен GPU
         if "gpu" in price_dict.keys() != 0:
             gpu = self.get_powerfull_gpu(price_dict["gpu"])
         else:
             gpu = None
+        cpu = self.get_powerfull_cpu(price_dict["cpu"],gpu is None)
+        print("cpu",cpu)
+        # Если нужен GPU
         motherboard = self.get_powerfull_motherboard(price_dict["motherboard"], cpu)
         
         print("mb",motherboard)
@@ -61,7 +60,7 @@ class ConfigurationCreator:
         lambda self, price: GPU.objects.filter(cost__lte=price).order_by("cost").last()
     )
     get_powerfull_cpu = (
-        lambda self, price: CPU.objects.filter(cost__lte=price).order_by("cost").last()
+        lambda self, price,is_graphics: CPU.objects.filter(cost__lte=price,is_graphics=is_graphics).order_by("cost").last()
     )
     get_powerfull_motherboard = (
         lambda self, price, cpu: MotherBoard.objects.filter(
