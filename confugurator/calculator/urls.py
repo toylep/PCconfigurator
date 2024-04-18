@@ -12,11 +12,13 @@ from calculator.views import (
     MultyRAMCreateView,
     MultyPowerUnitCreateView,
     CategoryListCreateView,
+    CategorySingleView
 )
 
 urlpatterns = [
     path("cofiguration/new", CalculatorView.as_view()),
     path("category", CategoryListCreateView.as_view()),
+    path("category/<int:pk>", CategorySingleView.as_view()),
     path("cpu", CPUListCreateView.as_view()),
     path("gpu", GPUListCreateView.as_view()),
     path("motherboard", MotherBoardListCreateView.as_view()),

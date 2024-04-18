@@ -134,8 +134,9 @@ REST_FRAMEWORK = {
 }
 SPECTACULAR_SETTINGS = {
     "TITLE": "API Конфигутарора Пк",
-    "DESCRIPTION": "Ну апишка для рыдика",
+    "DESCRIPTION": "Ну апишка для рыжика",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
+    'SCHEMA_PATH_PREFIX': "api/",
     # OTHER SETTINGS
 }
