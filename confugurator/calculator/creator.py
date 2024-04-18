@@ -38,18 +38,18 @@ class ConfigurationCreator:
             gpu = self.get_powerfull_gpu(price_dict["gpu"])
         else:
             gpu = None
-        cpu = self.get_powerfull_cpu(price_dict["cpu"],gpu is None)
-        print("cpu",cpu)
+        cpu = self.get_powerfull_cpu(price_dict["cpu"], gpu is None)
+        print("cpu", cpu)
         # Если нужен GPU
         motherboard = self.get_powerfull_motherboard(price_dict["motherboard"], cpu)
-        
-        print("mb",motherboard)
+
+        print("mb", motherboard)
 
         ram = self.get_powerfull_ram(price_dict["ram"], motherboard)
-        print("ram",ram)
+        print("ram", ram)
         max_tdp = (cpu.tdp + gpu.tdp if gpu is not None else 0) * 2 + 100
         power_unit = self.get_powerfull_powerunit(price_dict["power_unit"], max_tdp)
-        print("bp",power_unit)
+        print("bp", power_unit)
 
         return Configuration.objects.create(
             cpu=cpu, gpu=gpu, motherboard=motherboard, ram=ram, power_unit=power_unit
@@ -60,7 +60,11 @@ class ConfigurationCreator:
         lambda self, price: GPU.objects.filter(cost__lte=price).order_by("cost").last()
     )
     get_powerfull_cpu = (
-        lambda self, price,is_graphics: CPU.objects.filter(cost__lte=price,is_graphics=is_graphics).order_by("cost").last()
+        lambda self, price, is_graphics: CPU.objects.filter(
+            cost__lte=price, is_graphics=is_graphics
+        )
+        .order_by("cost")
+        .last()
     )
     get_powerfull_motherboard = (
         lambda self, price, cpu: MotherBoard.objects.filter(

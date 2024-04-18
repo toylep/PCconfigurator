@@ -1,6 +1,10 @@
 from django.http.response import HttpResponse, JsonResponse
 from drf_spectacular.utils import extend_schema
-from rest_framework.generics import ListCreateAPIView, GenericAPIView,RetrieveUpdateDestroyAPIView
+from rest_framework.generics import (
+    ListCreateAPIView,
+    GenericAPIView,
+    RetrieveUpdateDestroyAPIView,
+)
 from calculator.creator import ConfigurationCreator
 from calculator.serializers import (
     ConfigurationSerializer,
@@ -10,7 +14,7 @@ from calculator.serializers import (
     MotherBoardSerializer,
     RAMSerializer,
     PowerUnitSerializer,
-    ConfigOptionsSerializer
+    ConfigOptionsSerializer,
 )
 from calculator.models import (
     Category,
@@ -20,16 +24,11 @@ from calculator.models import (
     RAM,
     PowerUnit,
     Configuration,
-
 )
 from django.db import transaction
 
-@extend_schema(
-    parameters=[
-        ConfigOptionsSerializer
-    ],
-    responses=ConfigurationSerializer
-)
+
+@extend_schema(parameters=[ConfigOptionsSerializer], responses=ConfigurationSerializer)
 class CalculatorView(GenericAPIView):
     queryset = Configuration.objects.all()
 
@@ -40,7 +39,9 @@ class CalculatorView(GenericAPIView):
             configuration = ConfigurationCreator(price, category).configuration
             serialized_configuration = ConfigurationSerializer(configuration).data
         except:
-            return HttpResponse("На такую цену пока ничего не собрать :(", status=400)
+            return JsonResponse(
+                {"message": "На такую цену пока ничего не собрать :("}, status=400
+            )
         return JsonResponse(dict(serialized_configuration))
 
 
@@ -49,9 +50,11 @@ class CategoryListCreateView(ListCreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
+
 class CategorySingleView(RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+
 
 class GPUListCreateView(ListCreateAPIView):
 

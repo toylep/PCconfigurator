@@ -12,7 +12,7 @@ from calculator.views import (
     MultyRAMCreateView,
     MultyPowerUnitCreateView,
     CategoryListCreateView,
-    CategorySingleView
+    CategorySingleView,
 )
 
 urlpatterns = [

@@ -1,4 +1,4 @@
-from rest_framework.serializers import ModelSerializer,Serializer,IntegerField
+from rest_framework.serializers import ModelSerializer, Serializer, IntegerField
 from calculator.models import (
     GPU,
     CPU,
@@ -9,9 +9,11 @@ from calculator.models import (
     Configuration,
 )
 
+
 class ConfigOptionsSerializer(Serializer):
     cost = IntegerField(min_value=30000)
     category = IntegerField(min_value=1)
+
 
 class GPUSerializer(ModelSerializer):
     class Meta:

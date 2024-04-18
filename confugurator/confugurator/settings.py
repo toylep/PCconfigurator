@@ -137,6 +137,6 @@ SPECTACULAR_SETTINGS = {
     "DESCRIPTION": "Ну апишка для рыжика",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
-    'SCHEMA_PATH_PREFIX': "api/",
+    "SCHEMA_PATH_PREFIX": "api/",
     # OTHER SETTINGS
 }
