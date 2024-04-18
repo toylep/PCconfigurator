@@ -1,4 +1,4 @@
-from django.http.response import HttpResponse, JsonResponse
+from django.http.response import JsonResponse
 from drf_spectacular.utils import extend_schema
 from rest_framework.generics import (
     ListCreateAPIView,
@@ -35,7 +35,7 @@ class CalculatorView(GenericAPIView):
     def get(self, request):
         try:
             price = request.query_params["cost"]
-            category = int(request.query_params["category"])
+            category = request.query_params["category"]
             configuration = ConfigurationCreator(price, category).configuration
             serialized_configuration = ConfigurationSerializer(configuration).data
         except:
@@ -98,7 +98,7 @@ class MultyCreateView(GenericAPIView):
             for obj in data:
                 self.model.objects.create(**obj)
 
-        return HttpResponse("ok")
+        return JsonResponse({"messgage":"ok"},status=201)
 
 
 class MultyCPUCreateView(MultyCreateView):
