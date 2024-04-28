@@ -15,7 +15,16 @@ class ConfigurationCreator:
         price_dict = self.divide_price(category_id, price)
         self.configuration = self.create_configuration(price_dict)
 
-    def divide_price(self, category_id, price) -> dict[str, float]:
+    def divide_price(self, category_id: int, price: int) -> dict[str, float]:
+        """Метод для разделения цены на коэффициенты
+
+        Args:
+            category_id (int): id категории
+            price (int): общая цена
+
+        Returns:
+            dict[str, float]: _description_
+        """
         # Находим категорию
         category = Category.objects.get(id=category_id)
         category_dict = category.__dict__
@@ -27,12 +36,20 @@ class ConfigurationCreator:
         all_coef = sum(category_dict.values())
         new_dict = {}
         for k, v in category_dict.items():
-            if v != 0 & isinstance(v, float):
+            if v != 0 and isinstance(v, float):
                 v = float(price) * v / all_coef
                 new_dict[k] = v
         return new_dict
 
     def create_configuration(self, price_dict: dict[str, float]) -> Configuration:
+        """Метод для создания конфигурации
+
+        Args:
+            price_dict (dict[str, float]): словарь с ценами
+
+        Returns:
+            Configuration: новая готовая конфигурация
+        """
         # Получаем комплектующие в нужном порядке для совместимости
         if "gpu" in price_dict.keys() != 0:
             gpu = self.get_powerfull_gpu(price_dict["gpu"])

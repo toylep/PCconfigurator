@@ -33,6 +33,11 @@ class CalculatorView(GenericAPIView):
     queryset = Configuration.objects.all()
 
     def get(self, request):
+        """Точка на генерацию конфигурации
+
+        Returns:
+            json : Сериализованная готовая сборка
+        """
         try:
             price = request.query_params["cost"]
             category = request.query_params["category"]
@@ -46,41 +51,49 @@ class CalculatorView(GenericAPIView):
 
 
 class CategoryListCreateView(ListCreateAPIView):
+    """Создание/Получение списка категорий"""
 
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
 
 class CategorySingleView(RetrieveUpdateDestroyAPIView):
+    """Изменение/удаление категории"""
+
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
 
 class GPUListCreateView(ListCreateAPIView):
+    """Получение/Добавление видеокарты"""
 
     queryset = GPU.objects.all()
     serializer_class = GPUSerializer
 
 
 class CPUListCreateView(ListCreateAPIView):
+    """Получение/добавление процессора"""
 
     queryset = CPU.objects.all()
     serializer_class = CPUSerializer
 
 
 class MotherBoardListCreateView(ListCreateAPIView):
+    """Получение/добавление материнской платы"""
 
     queryset = MotherBoard.objects.all()
     serializer_class = MotherBoardSerializer
 
 
 class RAMListCreateView(ListCreateAPIView):
+    """Получение/добавление оперативной памяти"""
 
     queryset = RAM.objects.all()
     serializer_class = RAMSerializer
 
 
 class PowerUnitListCreateView(ListCreateAPIView):
+    """Получение/добавление блока питания"""
 
     queryset = PowerUnit.objects.all()
     serializer_class = PowerUnitSerializer
@@ -90,6 +103,8 @@ class PowerUnitListCreateView(ListCreateAPIView):
 
 
 class MultyCreateView(GenericAPIView):
+    """Абстракция чтобы можно было добавлять обьекты сразу списками"""
+
     model = None
 
     def post(self, request):
@@ -98,7 +113,7 @@ class MultyCreateView(GenericAPIView):
             for obj in data:
                 self.model.objects.create(**obj)
 
-        return JsonResponse({"messgage":"ok"},status=201)
+        return JsonResponse({"messgage": "ok"}, status=201)
 
 
 class MultyCPUCreateView(MultyCreateView):

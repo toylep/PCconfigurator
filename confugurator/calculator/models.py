@@ -4,6 +4,8 @@ from django.db import models
 
 
 class GPU(models.Model):
+    """Видеокарта"""
+
     name = models.CharField(max_length=100)
     cost = models.FloatField()
     memory = models.IntegerField()
@@ -13,6 +15,8 @@ class GPU(models.Model):
 
 
 class CPU(models.Model):
+    """Процессор"""
+
     name = models.CharField(max_length=100)
     cost = models.FloatField()
     frequency = models.CharField(max_length=100, null=True)
@@ -23,6 +27,8 @@ class CPU(models.Model):
 
 
 class MotherBoard(models.Model):
+    """Материнская плата"""
+
     name = models.CharField(max_length=100)
     cost = models.FloatField()
     socket = models.IntegerField()
@@ -32,6 +38,8 @@ class MotherBoard(models.Model):
 
 
 class RAM(models.Model):
+    """Оперативная память"""
+
     name = models.CharField(max_length=100)
     cost = models.FloatField()
     value_gb = models.IntegerField()
@@ -42,12 +50,16 @@ class RAM(models.Model):
 
 
 class PowerUnit(models.Model):
+    """Блок питания"""
+
     name = models.CharField(max_length=100)
     cost = models.FloatField()
     power = models.IntegerField()
 
 
 class Category(models.Model):
+    """Категория ПК"""
+
     name = models.CharField(max_length=50)
     cpu = models.FloatField()
     gpu = models.FloatField()
@@ -57,6 +69,8 @@ class Category(models.Model):
 
 
 class Configuration(models.Model):
+    """Конфигурация ПК(Сборка)"""
+
     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)
     gpu = models.ForeignKey(GPU, on_delete=models.CASCADE, null=True)
     motherboard = models.ForeignKey(MotherBoard, on_delete=models.CASCADE)

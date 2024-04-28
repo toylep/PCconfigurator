@@ -16,7 +16,7 @@ from calculator.views import (
 )
 
 urlpatterns = [
-    path("cofiguration/new", CalculatorView.as_view()),
+    path("configuration/new", CalculatorView.as_view()),
     path("category", CategoryListCreateView.as_view()),
     path("category/<int:pk>", CategorySingleView.as_view()),
     path("cpu", CPUListCreateView.as_view()),
