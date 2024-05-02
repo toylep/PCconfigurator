@@ -23,7 +23,7 @@ class ConfigurationCreator:
             price (int): общая цена
 
         Returns:
-            dict[str, float]: _description_
+            dict[str, float]: Словарик с ценами
         """
         # Находим категорию
         category = Category.objects.get(id=category_id)
